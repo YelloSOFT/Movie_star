@@ -19,9 +19,10 @@ import java.util.List;
 
 public class MovieStar_Home extends AppCompatActivity {
 
-    Button bt;
+    Button bt, bt2;
     private Context context;
     List<Stars> starss = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,13 +36,14 @@ public class MovieStar_Home extends AppCompatActivity {
         // устанавливаем для списка адаптер
         recyclerView.setAdapter(adapter);
     }
-    private void setInitialData(){
 
-        starss.add(new Stars ("Аль Пачино", "Пол: Мужской", "Возвраст: 77 лет",R.drawable.al));
-        starss.add(new Stars ("Ма́рлон Брандо", "Пол: Мужской", "Возвраст: 25 лет",R.drawable.bra));
-        starss.add(new Stars ("Каан Джеймс", "Пол: Мужской", "Возвраст: 77 лет",R.drawable.dj));
-        starss.add(new Stars ("Стефанелли Симонетта", "Пол: Женский", "Возвраст: 62 года",R.drawable.sim));
-        starss.add(new Stars ("Кастеллано Ричард", "Пол: Мужской", "Возвраст: 55 лет",R.drawable.ka));
+    private void setInitialData() {
+
+        starss.add(new Stars("Аль Пачино", "Пол: Мужской", "Возвраст: 77 лет", R.drawable.al));
+        starss.add(new Stars("Ма́рлон Брандо", "Пол: Мужской", "Возвраст: 25 лет", R.drawable.bra));
+        starss.add(new Stars("Каан Джеймс", "Пол: Мужской", "Возвраст: 77 лет", R.drawable.dj));
+        starss.add(new Stars("Стефанелли Симонетта", "Пол: Женский", "Возвраст: 62 года", R.drawable.sim));
+        starss.add(new Stars("Кастеллано Ричард", "Пол: Мужской", "Возвраст: 55 лет", R.drawable.ka));
     }
 
     // Кнопа Quit
@@ -71,9 +73,10 @@ public class MovieStar_Home extends AppCompatActivity {
                     finish();
                 }
             }
+
             @Override
-            public void onNothingSelected(AdapterView<?> parent) {}
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
         });
     }
-
 }

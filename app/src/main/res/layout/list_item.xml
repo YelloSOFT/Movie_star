@@ -3,7 +3,8 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="16dp"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:id="@+id/lila2">
 
     <ImageView
         android:id="@+id/image"

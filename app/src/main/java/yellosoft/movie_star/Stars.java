@@ -10,13 +10,15 @@ public class Stars {
     private String floor;
     private String age;
     private int image;
+    boolean click;
 
     public Stars(String name, String floor, String age, int image){
 
-        this.name=name;
+        this.name = name;
         this.floor = floor;
         this.age=age;
         this.image = image;
+        this.click = false;
     }
 
     public String getName() {
@@ -48,5 +50,10 @@ public class Stars {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public Boolean getclick() {return this.click;}
+
+    public void setclick(Boolean click) {this.click = click;
     }
 }

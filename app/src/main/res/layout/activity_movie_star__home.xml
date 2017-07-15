@@ -7,34 +7,43 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list"
-        android:layout_width="524dp"
-        android:layout_height="356dp"
+        android:layout_width="533dp"
+        android:layout_height="348dp"
         app:layoutManager="LinearLayoutManager"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="4dp" />
-
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="12dp" />
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="0dp"
-        android:layout_height="441dp"
+        android:layout_width="354dp"
+        android:layout_height="453dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="29dp">
 
         <Space
-            android:layout_height="0dp"
-            android:layout_width="match_parent"
-            android:layout_weight="1"/>
+            android:layout_width="320dp"
+            android:layout_height="322dp"
+            android:layout_weight="1.10" />
+
+        <Button
+            android:id="@+id/button_show"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:onClick="Show"
+            android:text="Show me what you got!" />
 
         <Button
             android:id="@+id/button_send"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
             android:gravity="center"
             android:onClick="QuitLis"
-            android:text="Quit"
-            android:layout_alignParentBottom="true"/>
+            android:text="Quit" />
+
 
     </LinearLayout>
 
